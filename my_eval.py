@@ -1,3 +1,10 @@
+def inputting():
+    inputted_string = input("Please Enter Your Math Phrase Here: ")
+    if inputted_string == "":
+        inputting()
+    return inputted_string
+
+
 def make_list(inputted_string):  # like "( 2 ** 10 ) / ( 2 * 16 )"
     inputted_string = inputted_string.replace(" ", "")
     inputted_list = []
